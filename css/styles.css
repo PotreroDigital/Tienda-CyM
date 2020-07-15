@@ -447,7 +447,10 @@ footer {
 }
 
 #nav-menu-id:hover {
-  color: var(--dark-light);
+  background: var(--primary);
+  border-radius: 10px;
+  padding-top: 1px;
+  text-align: center;
 }
 
 #nav-menu-id .zmdi {
@@ -644,12 +647,12 @@ footer {
     }
 
     .sub-menu-ul .nav-menu-link {
-        padding: 16px;
+        padding: 18px;
         font-weight: bold;
     }
 
     .sub-menu-ul .nav-menu-link:hover {
-      color: var(--primary);
+      color: var(--rose);
     }
 
     .container-menu {
@@ -657,24 +660,25 @@ footer {
     }
 
     .nav-menu-item:hover > .container-menu {
-      width: 400px;
-      background: var(--primary);
+      width: 255.6px;
+      background: var(--rose);
       border-radius: 10px 10px 10px 10px;
+      padding: 0px;
       position: absolute;
-      top: 56px;
+      top: 55px;
       display: flex;
       flex-wrap: wrap;
     }
 
     .container-menu .link-submenu {
       color: var(--dark-lighten);
-      padding: 15px 37.9px ;
-      border-radius: 10px 10px 0px 0px;
+      padding: 10px 10px ;
+      border-radius: 10px 10px 10px 10px;
       text-align: center;
     }
 
     .link-submenu:hover {
-      background: var(--rose)
+      background: var(--primary)
     }
 
     .container-sub-menu {
@@ -684,11 +688,14 @@ footer {
     }
 
     .nav-menu-item:hover > .container-sub-menu {
-        width: 400px;
+        width: 300px;
+        border-radius: 10px 10px 10px 10px;
         background: var(--dark-lighten);
-        padding: 1rem;
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
         position: absolute;
-        top: 56px;
+        top: 44px;
         display: flex;
         flex-wrap: wrap;
         -moz-box-shadow: 1px 6px 18px rgba(94, 94, 94, 0.5);
@@ -732,7 +739,7 @@ footer {
 
 .nav-fixed {
     position: fixed;
-    background: var(--rose);
+    background:  rgba(247, 147, 237, 0.8);
     top: 0;
     margin: 0;
 }
@@ -1095,6 +1102,7 @@ footer {
 .ads {
     color: #ffffff;
     background: var(--primary);
+    border-radius: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1103,6 +1111,12 @@ footer {
 
 .ads-h1 {
     margin-bottom: 0;
+    font-size: 20px;
+}
+
+.ads-h2 {
+  margin-bottom: 0;
+  font-size: 16px;
 }
 
 .slider {
