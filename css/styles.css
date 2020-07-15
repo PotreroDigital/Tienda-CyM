@@ -27,6 +27,8 @@ html {
  */
 body {
     margin: 0;
+    padding: 0;
+    background: rgba(247, 147, 237, 0.15);
 }
 
 /**
@@ -346,6 +348,7 @@ template {
 
 :root {
     /*Colores*/
+    --rose-trans: rgba(247, 147, 237, 0.15);
     --rose-transparent: rgba(247, 125, 228, 0.7);
     --rose: #fe83e3;
     --transparent: rgba(0, 0, 0, 0);
@@ -979,7 +982,7 @@ footer {
 }
 
 .footer {
-    background: var(--dark-lighten);
+    background: var(--rose-trans);
     margin-top: 1rem;
     padding: 24px 0px 0px 0px;
 }
@@ -1012,7 +1015,7 @@ footer {
 }
 
 .footer-link:hover {
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .footer-socials {
@@ -1038,25 +1041,15 @@ footer {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    line-height: 2;
+    padding: 0.1rem;
     text-align: center;
 }
 
-.footer-bar-autor {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    text-align: right;
-}
-
 .footer-bar-top-links:hover {
-    color: var(--primary);
+    color: var(--dark-lighten);
 }
 
-.footer-bar-autor:hover {
-    color: var(--primary);
-}
 
 .form-group {
     width: 90%;
@@ -1175,7 +1168,7 @@ footer {
     display: flex;
     white-space: nowrap;
     overflow: auto;
-    background: var(--dark-lighten);
+    background: var(--rose-trans);
     justify-content: flex-start;
 }
 
@@ -1188,7 +1181,7 @@ footer {
 }
 
 .active-tab {
-    background: var(--dark);
+    background: var(--rose);
     color: #ffffff;
 }
 
@@ -1213,11 +1206,6 @@ footer {
     left: 0;
 }
 
-.video-container {
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-}
 
 .comment-container {
     display: flex;
@@ -1281,7 +1269,8 @@ footer {
 }
 
 .btn-default {
-    color: var(--rose);
+    background-color: var(--rose-transparent);
+    color: var(--dark);
     border: solid 1px var(--rose);
     font-size: 20px;
     font-weight: bold;
